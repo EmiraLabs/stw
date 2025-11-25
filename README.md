@@ -1,4 +1,4 @@
-# Minimal Static Site Template
+# STW - Static Website
 
 This is a template for building static websites deployable to Cloudflare Pages using the STW CLI.
 
