@@ -1,23 +1,27 @@
-# Minimal Static Site Generator
+# Minimal Static Site Template
 
-This is a very minimal framework for building static websites deployable to Cloudflare Pages.
+This is a template for building static websites deployable to Cloudflare Pages using the STW CLI.
+
+## Installation
+
+1. Clone this repository: `git clone https://github.com/EmiraLabs/stw.git`
+2. Install the STW CLI: `go install github.com/EmiraLabs/stw-cli@latest`
 
 ## How it works
 
 - `pages/`: Contains your page content as HTML snippets.
 - `templates/`: Base HTML template with placeholders like `{{content}}` and `{{title}}`.
 - `assets/`: CSS, JS, images, etc.
-- `main.go`: Go script to generate and serve the site.
 
 ## Building the site
 
-Run: `go run main.go --build`
+Run: `stw --build`
 
 This generates static files in `dist/`.
 
 ## Serving locally
 
-Run: `go run main.go --serve`
+Run: `stw --serve`
 
 This builds the site and serves it on http://localhost:8001.
 
@@ -25,7 +29,7 @@ This builds the site and serves it on http://localhost:8001.
 
 1. Install Wrangler: `npm install -g wrangler`
 2. Authenticate: `wrangler auth login`
-3. Build and deploy: `go run main.go --build && wrangler deploy`
+3. Build and deploy: `stw --build && wrangler deploy`
 
 This deploys the static site as a Cloudflare Worker with custom domain routing.
 
