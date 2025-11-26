@@ -14,18 +14,6 @@ This is a GitHub template for building static websites deployable to Cloudflare 
 - `templates/`: Base HTML template with placeholders like `{{content}}` and `{{title}}`.
 - `assets/`: CSS, JS, images, etc.
 
-## Building the site
-
-Run: `stw build`
-
-This generates static files in `dist/`.
-
-## Serving locally
-
-Run: `stw serve`
-
-This builds the site and serves it on http://localhost:8080.
-
 ## Deploy the Site
 
 To deploy your site to Cloudflare Pages:
