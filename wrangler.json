@@ -1,12 +1,12 @@
 {
-  "name": "{{ project_name}}",
+  "name": "{{ .project_name}}",
   "compatibility_date": "2025-11-17",
   "assets": {
     "directory": "./dist"
   },
   "routes": [
     {
-      "pattern": "{{ domain }}",
+      "pattern": "{{ .domain }}",
       "custom_domain": true
     }
   ]
