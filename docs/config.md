@@ -1,12 +1,14 @@
 # Configuration
 
-The `config.yaml` file contains site-wide configuration data used by the STW CLI to generate the static site. It uses YAML format and is loaded into the templates as `.Config`.
+The `config.yaml` file contains site-wide configuration data used by the STW CLI to generate the static site. It uses YAML format and is loaded into the templates as `.Config`. The configuration is fully flexible, allowing you to define any data structure that suits your site's needs.
 
-## Structure
+## Examples
 
-### Navigations
+The following are examples of common configurations. You can define any YAML structure in `config.yaml`, and access it in templates via `.Config`.
 
-An array of navigation items for the site menu.
+### Navigation Menu
+
+For example, you can define an array of navigation items for the site menu:
 
 ```yaml
 navigations:
@@ -24,9 +26,9 @@ Each item has:
 
 This is used in `templates/components/header.html` to generate the navigation menu.
 
-### Home
+### Home Page Content
 
-Contains content sections for the home page.
+For example, you can define content sections for the home page:
 
 ```yaml
 home:
@@ -45,4 +47,4 @@ This is used in `pages/index.html` to render the home page content.
 
 ## Usage
 
-The config data is accessible in templates as `.Config.navigations` and `.Config.home.contents`. Modify this file to change site navigation and home page content.
+The config data is accessible in templates as `.Config.navigations` and `.Config.home.contents`. Since the configuration is fully dynamic, any data defined in `config.yaml` can be rendered in templates, including HTML content through Go HTML templates. Modify this file to customize your site's configuration.
