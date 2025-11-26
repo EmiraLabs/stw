@@ -26,20 +26,6 @@ Run: `stw serve`
 
 This builds the site and serves it on http://localhost:8080.
 
-## Initialize Deployment Configuration
-
-To set up deployment configuration:
-
-```bash
-stw init
-```
-
-This will prompt you for:
-- **Project name** (default: stw-site)
-- **Custom domain** (required, e.g., yoursite.com)
-
-It creates a `wrangler.json` file with your specified values, configured for Cloudflare Workers deployment with static assets.
-
 ## Deploy the Site
 
 To deploy your site to Cloudflare Pages:
