@@ -26,10 +26,10 @@ For detailed instructions, including prerequisites and setup, see [docs/deployme
 
 ## Customization
 
-- Edit `templates/base.html` for layout.
-- Add more pages in `pages/`.
-- Modify CSS in `assets/css/style.css`.
-- Add JS in `assets/js/app.js`.
+- [Templates](docs/templating.md): Edit `templates/base.html` for layout.
+- [Pages](docs/pages.md): Add more pages in `pages/`.
+- [Assets](docs/assets.md): Modify CSS in `assets/css/style.css` and add JS in `assets/js/app.js`.
+- [Configuration](docs/config.md): Edit `config.yaml` for navigation and content.
 
 ## Documentation
 
