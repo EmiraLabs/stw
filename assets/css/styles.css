@@ -1,0 +1,163 @@
+/* Fresh Modern CSS - Element Only */
+html {
+  box-sizing: border-box;
+  font-size: 17px;
+  background: #f0f4f8;
+  color: #222b3a;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: transparent;
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background: #fff;
+  color: #2d3a4a;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e9f2;
+  box-shadow: 0 2px 8px 0 rgba(60,80,120,0.04);
+}
+
+header div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+header h1 a {
+  color: #2d3a4a;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: #2d3a4a;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+
+header nav a:hover, header nav a:focus {
+  background: #e5e9f2;
+  color: #0077cc;
+}
+
+footer {
+  background: #fff;
+  color: #2d3a4a;
+  padding: 1.5rem 0 1.2rem 0;
+  text-align: center;
+  border-top: 1px solid #e5e9f2;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 -2px 8px 0 rgba(60,80,120,0.04);
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto 0 auto;
+  padding: 2rem 1.5rem;
+  background: #fafdff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(60,80,120,0.06);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0 0 1.1rem 0;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: #1a2233;
+}
+h2 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 1.7rem 0 0.9rem 0;
+  line-height: 1.2;
+  color: #25304a;
+}
+h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 1.2rem 0 0.6rem 0;
+  color: #2d3a4a;
+}
+h4 {
+  font-size: 1.02rem;
+  font-weight: 500;
+  margin: 1rem 0 0.4rem 0;
+  color: #3a4660;
+}
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0.8rem 0 0.4rem 0;
+  color: #4a5670;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  color: #384150;
+  font-size: 1.04rem;
+}
+
+i {
+  color: #7b8794;
+  font-style: italic;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover, a:focus {
+  color: #005fa3;
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 1rem 0 1.2rem 2rem;
+  padding: 0;
+}
+li {
+  margin-bottom: 0.4rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 1.2rem 0;
+  box-shadow: 0 1px 4px 0 rgba(60,80,120,0.07);
+}

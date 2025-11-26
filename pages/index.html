@@ -1,2 +1,10 @@
-<h1>Welcome to the Home Page</h1>
-<p>This is the home page content.</p>
+<section>
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page content.</p>
+    {{ range .Config.home.contents }}
+    <section>
+        {{ .title }}
+        <p>{{ .content }}</p>
+    </section>
+    {{ end }}
+</section>
