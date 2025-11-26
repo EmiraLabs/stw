@@ -13,6 +13,24 @@
         {{.Content}}
     </main>
     {{template "footer.html" .}}
-    <script src="assets/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
+    {{if .IsDev}}
+    <script>
+        console.log('Connecting to EventSource');
+        const evtSource = new EventSource('/__reload');
+        evtSource.onopen = function() {
+            console.log('EventSource connected');
+        };
+        evtSource.onmessage = function(event) {
+            console.log('Received event:', event.data);
+            if (event.data === 'reload') {
+                location.reload();
+            }
+        };
+        evtSource.onerror = function(event) {
+            console.error('EventSource error:', event);
+        };
+    </script>
+    {{end}}
 </body>
 </html>
