@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{.Title}}</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Minimal Site</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body class="font-sans m-0 p-0 leading-relaxed">
+<body>
     {{template "header.html" .}}
-    <main class="p-4">
+    <main>
         {{.Content}}
     </main>
     {{template "footer.html" .}}
