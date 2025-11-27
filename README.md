@@ -2,6 +2,16 @@
 
 This is a GitHub template for building static websites deployable to Cloudflare using the STW CLI.
 
+## Features
+
+- **SEO Meta Support**: Per-page and site-wide SEO metadata with front matter
+- Go template-based rendering
+- YAML configuration
+- Nested page routing
+- Live reload in development
+- Cloudflare Pages deployment
+- Minimal, fast static generation
+
 ## Installation
 
 1. Click "Use this template" on GitHub to create a new repository.

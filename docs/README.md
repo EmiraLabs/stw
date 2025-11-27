@@ -33,6 +33,7 @@ stw/
 - [Assets](assets.md) - Static files
 - [Building](building.md) - Build and serve commands
 - [Deployment](deployment.md) - Cloudflare deployment
+- [SEO Meta System](seo-meta.md) - Complete guide to configuring SEO metadata
 
 ## Key Features
 
