@@ -18,6 +18,16 @@ STW (Static Website Template) is a GitHub template that combines the simplicity 
 
 ## Quick Start
 
+The easiest way to use this template is via the `stw` CLI:
+```bash
+# Initialize a new site using this template
+stw init my-site
+# Initialize and configure for Cloudflare Pages
+stw init my-site --wrangler
+```
+
+For full documentation, visit the [stw-cli repository](https://github.com/EmiraLabs/stw-cli).
+
 ### 1. Use This Template
 
 Click the **"Use this template"** button on GitHub to create your own repository.
@@ -30,10 +40,9 @@ cd yourrepo
 go install github.com/EmiraLabs/stw-cli@latest
 ```
 
-### 3. Configure & Build
+### 3. Build
 
 ```bash
-stw init    # Configure project name and domain
 stw serve   # Start development server with live reload
 stw build   # Generate static files
 ```
